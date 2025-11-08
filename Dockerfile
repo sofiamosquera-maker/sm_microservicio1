@@ -15,6 +15,7 @@ COPY app.py .
 # Instala Flask
 RUN pip install flask
 RUN pip install requests
+RUN pip install flask-cors
 
 RUN chown -R appuser:appgroup /app
 
