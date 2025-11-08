@@ -74,4 +74,4 @@ jobs:
       - name: Deploy files
         run: |
           helm show chart oci://registry-1.docker.io/sofiamosquera/sm-chart --version 6
-          helm upgrade --install gateway_mservice oci://registry-1.docker.io/sofiamosquera/sm-chart --version 6 --values values.yaml
+          helm upgrade --install gateway-mservice oci://registry-1.docker.io/sofiamosquera/sm-chart --version 6 --values values.yaml

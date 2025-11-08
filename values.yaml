@@ -1,5 +1,5 @@
 namespace: sofia-mosquera-dev
-name: gateway_mservice
+name: gateway-mservice
 
 metadata:
   labels:
