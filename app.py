@@ -8,7 +8,7 @@ app = Flask(__name__)
 def call_app_b():
     try:
         
-        response = requests.get('http://mi-servicio-backend-mservice.sofia-mosquera-dev.svc.cluster.local:4000/all')
+        response = requests.get('http://mi-servicio-backend-mservice.sofia-mosquera-dev.svc.cluster.local:4000/data/all')
         return f'{response.text}', response.status_code
     except requests.exceptions.ConnectionError:
         return 'Error: no se pudo conectar con app B', 500
